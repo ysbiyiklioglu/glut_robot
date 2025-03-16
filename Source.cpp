@@ -42,7 +42,7 @@ void robotGogsu(void)
 	glutSolidCube(1.0f); 
 	glPopMatrix();
 
-	// Gövde
+	// GÃ¶vde
 	glPushMatrix();
 	glColor3f(0.8, 0.8, 0.8); 
 	glScalef(1.0, 1.5, 0.5); 
@@ -116,7 +116,7 @@ void robotKollar(void)
 	glTranslatef(-0.4, 0.2, 0.0); 
 	glRotatef(solKolAci, 1.0, 0.0, 0.0); 
 
-	// Üst kol
+	// Ãœst kol
 	glPushMatrix();
 	glScalef(0.1, 0.5, 0.1);
 	glutSolidCube(1.0);
@@ -141,13 +141,13 @@ void robotKollar(void)
 	glPopMatrix(); 
 	glPopMatrix(); 
 
-	// Sað kol
+	// SaÃ° kol
 	glPushMatrix();
 	glColor3f(0.3, 0.3, 0.3);
 	glTranslatef(0.4, 0.2, 0.0); 
 	glRotatef(sagKolAci, 1.0, 0.0, 0.0); 
 
-	// Üst kol
+	// Ãœst kol
 	glPushMatrix();
 	glScalef(0.1, 0.5, 0.1);
 	glutSolidCube(1.0);
@@ -180,7 +180,7 @@ void robotbacaklar(void)
 	glTranslatef(-0.2f, -0.8f, 0.0f); 
 	glRotatef(solBacakAci, 1.0f, 0.0f, 0.0f); 
 
-	// Üst bacak
+	// Ãœst bacak
 	glPushMatrix();
 	glTranslatef(0.0f, -0.3f, 0.0f); 
 	glScalef(0.2f, 0.6f, 0.2f);
@@ -211,13 +211,13 @@ void robotbacaklar(void)
 
 	glPopMatrix();
 
-	// Sað bacak
+	// SaÃ° bacak
 	glPushMatrix();
 	glColor3f(0.2f, 0.2f, 0.2f); 
 	glTranslatef(0.2f, -0.8f, 0.0f); 
 	glRotatef(sagBacakAci, 1.0f, 0.0f, 0.0f); 
 
-	// Üst bacak
+	// Ãœst bacak
 	glPushMatrix();
 	glTranslatef(0.0f, -0.3f, 0.0f);
 	glScalef(0.2f, 0.6f, 0.2f);
@@ -408,7 +408,6 @@ void cizimyeri(void)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 
-	//sonradan oyuncunun haraketine göre haraket eden kamera eklendi
 	gluLookAt(0.0, 2.0, 5.0, xgotur, ygotur, zgotur, 0.0, 1.0, 0.0);
 	glPushMatrix();
 	glColor3f(0, 0, 1);
